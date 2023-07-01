@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="700.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="Gui.InterfaceAdminController">
+    <stylesheets>
+        <URL value="@interfaceadmin.css" />
+    </stylesheets>
+   <children>
+      <BorderPane fx:id="mainCenter" layoutX="113.0" layoutY="64.0" prefHeight="200.0" prefWidth="389.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="65.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane layoutX="189.0" layoutY="-86.0" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #032d40;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  <HBox layoutX="318.0" layoutY="-17.0" prefHeight="43.0" prefWidth="525.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+                     <children>
+                        <JFXTextField focusColor="#27c9b3" prefHeight="38.0" prefWidth="136.0" promptText="Search" />
+                        <JFXButton prefHeight="38.0" prefWidth="75.0" style="-fx-background-color: #146886;" styleClass="menuitem" text="Search" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </JFXButton>
+                        <FontAwesomeIconView fill="#146886" glyphName="ENVELOPE" size="20" textAlignment="CENTER" wrappingWidth="63.0">
+                           <HBox.margin>
+                              <Insets right="20.0" top="10.0" />
+                           </HBox.margin>
+                        </FontAwesomeIconView>
+                        <FontAwesomeIconView fill="#146886" glyphName="BELL" size="20" textAlignment="CENTER" wrappingWidth="63.0">
+                           <HBox.margin>
+                              <Insets right="20.0" top="10.0" />
+                           </HBox.margin>
+                        </FontAwesomeIconView>
+                        <JFXButton onAction="#LogOut" prefHeight="38.0" prefWidth="136.0" styleClass="menuitem" text="LOGOUT">
+                           <graphic>
+                              <FontAwesomeIconView fill="#27c9b3" glyphName="UNLOCK" size="25" />
+                           </graphic>
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+                  <Label layoutX="65.0" layoutY="24.0" prefHeight="21.0" prefWidth="136.0" text="Admiinistrateur" textFill="#27c9b3" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="556.0" AnchorPane.topAnchor="36.0">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="REORDER" size="20" />
+                     </graphic>
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </top>
+         <left>
+            <AnchorPane prefHeight="362.0" prefWidth="176.0" style="-fx-background-color: #032d40;" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox layoutX="38.0" layoutY="22.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="55.0">
+                     <children>
+                        <JFXButton onAction="#ProfilPage" prefHeight="38.0" prefWidth="176.0" style="-fx-background-color: #27c9b3;" styleClass="sidebaritem" text="Profil" textFill="WHITE">
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="USER" size="20" styleClass="sidebaritem" />
+                           </graphic>
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton onAction="#MembresPage" prefHeight="38.0" prefWidth="176.0" styleClass="sidebaritem" text="Membres" textFill="WHITE">
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="USERS" size="20" />
+                           </graphic>
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton onAction="#VoyagesPage" prefHeight="38.0" prefWidth="176.0" styleClass="sidebaritem" text="Voyages" textFill="WHITE">
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="PLANE" size="20" />
+                           </graphic>
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>

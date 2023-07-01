@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="580.0" prefWidth="809.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.ListeVoyageController">
+   <children>
+      <Label fx:id="labliste" layoutX="62.0" layoutY="37.0" prefHeight="31.0" prefWidth="230.0" text="Liste voyages" textFill="#5dafc6">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font></Label>
+      <TableView fx:id="table" layoutX="313.0" layoutY="116.0" prefHeight="367.0" prefWidth="516.0">
+        <columns>
+          <TableColumn fx:id="col_Nom" prefWidth="96.0" text="NomVoyage" />
+          <TableColumn fx:id="col_Date" prefWidth="95.0" text="DateVoyage" />
+            <TableColumn fx:id="col_Description" minWidth="0.0" prefWidth="166.0" text="DescriptionVoyage" />
+            <TableColumn fx:id="col_Type" prefWidth="76.0" text="TypeVoyage" />
+            <TableColumn fx:id="col_comment" prefWidth="82.0" text="Commentaire" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnAdd" layoutX="390.0" layoutY="78.0" mnemonicParsing="false" onAction="#AddVoyage" prefHeight="25.0" prefWidth="141.0" text="Ajouter un voyage" />
+      <Button fx:id="btnUpdate" layoutX="574.0" layoutY="38.0" mnemonicParsing="false" onAction="#UpdateVoyage" prefHeight="25.0" prefWidth="141.0" text="Modifier un voyage" />
+      <Button fx:id="btnDelete" layoutX="574.0" layoutY="78.0" mnemonicParsing="false" onAction="#DeleteVoyage" prefHeight="25.0" prefWidth="141.0" text="supprimer un voyage" />
+      <Button fx:id="btnReturnHome" layoutX="387.0" layoutY="38.0" mnemonicParsing="false" onAction="#returnHome" prefHeight="25.0" prefWidth="147.0" text="Retour à l'accueil" />
+      <ImageView fitHeight="422.0" fitWidth="307.0" layoutX="8.0" layoutY="122.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/pngkey.com-world-clip-art-png-2174579.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="414.0" layoutY="513.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="141.0" text="Reserver" />
+      <Button layoutX="605.0" layoutY="513.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="141.0" text="Liste reservation" />
+   </children>
+</AnchorPane>

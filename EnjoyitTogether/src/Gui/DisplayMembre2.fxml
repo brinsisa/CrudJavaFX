@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.Font?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.DisplayMembre2Controller">
+    <stylesheets>
+        <URL value="@displaymembre2.css"/>
+    </stylesheets>
+    
+    <children>
+        <Pane layoutY="77.0" prefHeight="5.0" prefWidth="700.0" style="-fx-background-color: #dd9013;" />
+        <Text fill="#eea507" layoutX="22.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Afficher Membre">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Text>
+        
+        
+        <Text fill="#000000" layoutX="22.0" layoutY="150.0" text="Login: ">
+            <font>
+                <Font name="System Bold" size="18" />
+            </font>
+        </Text>
+        
+        <Label fx:id="lblLogin"  layoutX="100.0" layoutY="130.0" text="">
+            <font>
+                <Font name="System Bold" size="16" />
+            </font>
+        </Label>
+        
+        <Text fill="#000000" layoutX="300.0" layoutY="150.0" text="Age: ">
+            <font>
+                <Font name="System Bold" size="18" />
+            </font>
+        </Text>
+        
+        <Label fx:id="lblAge"  layoutX="350.0" layoutY="130.0" text="">
+            <font>
+                <Font name="System Bold" size="16" />
+            </font>
+        </Label>
+        
+        <Text fill="#000000" layoutX="22.0" layoutY="200.0" text="Nom: ">
+            <font>
+                <Font name="System Bold" size="18" />
+            </font>
+        </Text>
+        
+        <Label fx:id="lblNom"  layoutX="100.0" layoutY="180.0" text="">
+            <font>
+                <Font name="System Bold" size="16" />
+            </font>
+        </Label>
+        
+         <Text fill="#000000" layoutX="300.0" layoutY="200.0" text="CIN: ">
+            <font>
+                <Font name="System Bold" size="18" />
+            </font>
+        </Text>
+        
+        <Label fx:id="lblCin"  layoutX="350.0" layoutY="180.0" text="">
+            <font>
+                <Font name="System Bold" size="16" />
+            </font>
+        </Label>
+        
+        <Text fill="#000000" layoutX="22.0" layoutY="250.0" text="Prenom: ">
+            <font>
+                <Font name="System Bold" size="18" />
+            </font>
+        </Text>
+        
+        <Label fx:id="lblPrenom"  layoutX="100.0" layoutY="230.0" text="">
+            <font>
+                <Font name="System Bold" size="16" />
+            </font>
+        </Label>
+        
+        <Text fill="#000000" layoutX="22.0" layoutY="300.0" text="Adresse: ">
+            <font>
+                <Font name="System Bold" size="18" />
+            </font>
+        </Text>
+        
+        <Label fx:id="lblAdresse"  layoutX="100.0" layoutY="280.0" text="">
+            <font>
+                <Font name="System Bold" size="16" />
+            </font>
+        </Label>
+                
+        <Button fx:id="btnRemove" layoutX="300.0" layoutY="320.0" mnemonicParsing="false" onAction="#removeInvitation"  style="-fx-background-color: #ff9c46;" text="Supprimer Ami" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Button>
+        
+    </children>
+</AnchorPane>

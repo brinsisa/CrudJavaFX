@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="456.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.DisplayAvisController">
+   <children>
+      <Text fill="#908c1f" layoutX="8.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rating User" wrappingWidth="142.18359375">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Pane layoutX="-1.0" layoutY="66.0" prefHeight="5.0" prefWidth="614.0" style="-fx-background-color: #f1ca04;" />
+      <TableView fx:id="table_a" layoutX="43.0" layoutY="192.0" prefHeight="223.0" prefWidth="495.0">
+        <columns>
+          <TableColumn fx:id="nom_mcol" prefWidth="130.0" text="Name" />
+            <TableColumn fx:id="rating_acol" prefWidth="112.0" text="Rate" />
+            <TableColumn fx:id="date_acol" prefWidth="110.0" text="Date" />
+            <TableColumn fx:id="editcol" prefWidth="141.0" text="Action" />
+        </columns>
+      </TableView>
+      <FontAwesomeIconView fill="#ebe715" glyphName="STAR" layoutX="44.0" layoutY="144.0" onMouseClicked="#getAddAvis" size="40" wrappingWidth="37.0" />
+      <Text fill="#1cdd1c" layoutX="80.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <FontAwesomeIconView fill="#40d7ee" glyphName="REFRESH" layoutX="150.0" layoutY="141.0" onMouseClicked="#DisplayAvis" size="35" />
+      <Text fill="#e858cd" layoutX="180.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Refresh">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="Gui.ListAmisController">
+    <stylesheets>
+        <URL value="@listamis.css" />
+    </stylesheets>
+    
+    <children>
+        <Pane layoutY="77.0" prefHeight="5.0" prefWidth="700.0" style="-fx-background-color: #dd9013;" />
+        <Text fill="#eea507" layoutX="22.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste Amis">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Text>
+        <TableView fx:id="tablec2" layoutX="38.0" layoutY="181.0" prefHeight="280.0" prefWidth="631.0">
+            <columns>
+                <TableColumn fx:id="login" prefWidth="129.0" text="LOGIN" />
+                <TableColumn fx:id="nom" prefWidth="106.0" text="NOM" />
+                <TableColumn fx:id="prenom" prefWidth="118.0" text="PRENOM" />
+                <TableColumn fx:id="email" prefWidth="167.0" text="ADRESSE" />
+                <TableColumn fx:id="profilCol" prefWidth="110.0" text="ACTION" />
+            </columns>
+        </TableView>
+        <HBox layoutX="38.0" layoutY="106.0" prefHeight="57.0" prefWidth="242.0">
+            <children>
+                <FontAwesomeIconView fill="#1ec31e" glyphName="SEARCH" onMouseClicked="#chercherAmis" size="40">
+                    <HBox.margin>
+                        <Insets right="30.0" />
+                    </HBox.margin>
+                </FontAwesomeIconView>
+                <FontAwesomeIconView accessibleRole="IMAGE_VIEW" fill="#56b5da" glyphName="REFRESH" onMouseClicked="#displayMembres" size="40" />
+                
+                <FontAwesomeIconView fill="#1ec31e" glyphName="SEND" onMouseClicked="#envoyerMessage" size="40">
+                    <HBox.margin>
+                        <Insets left="30.0" />
+                    </HBox.margin>
+                </FontAwesomeIconView>
+            <FontAwesomeIconView fill="#e1ee24" glyphName="STAR" onMouseClicked="#getAddAvis" size="40">
+               <HBox.margin>
+                  <Insets left="30.0" />
+               </HBox.margin>
+            </FontAwesomeIconView>
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>

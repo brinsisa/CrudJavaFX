@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.AjouterNewCommentaireController">
+    <stylesheets>
+        <URL value="@ajouternewcommentaire.css" />
+    </stylesheets>
+   <children>
+      <TextArea fx:id="textcontenu" layoutX="125.0" layoutY="150.0" prefHeight="75.0" prefWidth="432.0" promptText="Ajouter commentaire . . ." style="-fx-background-color: transparent; -fx-border-width: 0px 0px 3px 0px; -fx-border-color: #1bdaad;">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextArea>
+      <Button layoutX="444.0" layoutY="253.0" mnemonicParsing="false" onAction="#ajoutNewComment" prefHeight="41.0" prefWidth="115.0" style="-fx-background-color: #1bdaad;" text="Ajouter" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="125.0" layoutY="253.0" mnemonicParsing="false" onAction="#annuler" prefHeight="41.0" prefWidth="115.0" style="-fx-background-color: #ff9c46;" text="Annuler" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="commentairecombo" layoutX="355.0" layoutY="83.0" prefHeight="32.0" prefWidth="197.0" promptText="Répondre A" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 3px 0px; -fx-border-color: #ff9c46;" />
+      <ComboBox fx:id="membrecombo" layoutX="124.0" layoutY="84.0" prefHeight="32.0" prefWidth="150.0" promptText="Membre" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 3px 0px; -fx-border-color: #ff9c46;" />
+   </children>
+</AnchorPane>

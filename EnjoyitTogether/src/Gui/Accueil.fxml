@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="700.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.AccueilController">
+    <stylesheets>
+        <URL value="@accueil.css" />
+    </stylesheets>
+   <children>
+      <BorderPane fx:id="mainCenter" layoutX="49.0" layoutY="44.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="65.0" prefWidth="200.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #032d40;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  <HBox layoutX="197.0" layoutY="-17.0" prefHeight="43.0" prefWidth="525.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+                     <children>
+                        <JFXButton onMouseClicked="#HomePage" prefHeight="38.0" prefWidth="136.0" styleClass="menuitem" text="Home" textFill="#d3cdcd">
+                           <graphic>
+                              <FontAwesomeIconView fill="#d3cdcd" glyphName="HOME" size="20" />
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton onAction="#LoginPage" prefHeight="38.0" prefWidth="136.0" styleClass="menuitem" text="LOGIN" textFill="#d3cdcd">
+                           <graphic>
+                              <FontAwesomeIconView fill="#d3cdcd" glyphName="LOCK" size="20" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton onAction="#SinupPage" prefHeight="38.0" prefWidth="136.0" styleClass="menuitem" text="SIGN UP" textFill="#d3cdcd">
+                           <graphic>
+                              <FontAwesomeIconView fill="#d3cdcd" glyphName="USER_PLUS" size="20" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton onAction="#AvisPage" prefHeight="38.0" prefWidth="136.0" styleClass="menuitem" text="Contact" textFill="#d3cdcd">
+                           <graphic>
+                              <FontAwesomeIconView fill="#d3cdcd" glyphName="PHONE" size="20" />
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+                  <Label fx:id="Menu" layoutX="11.0" layoutY="36.0" text="MENU" textFill="#d3cdcd" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="622.0" AnchorPane.topAnchor="36.0">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fill="#d3cdcd" glyphName="REORDER" size="20" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="MenuBack" layoutX="11.0" layoutY="36.0" text="MENU" textFill="#d3cdcd" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="622.0" AnchorPane.topAnchor="36.0">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fill="#d3cdcd" glyphName="REORDER" size="20" />
+                     </graphic>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </top>
+         <left>
+            <AnchorPane fx:id="slider" prefHeight="362.0" prefWidth="176.0" style="-fx-background-color: #032d40;" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox layoutX="49.0" layoutY="68.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="55.0">
+                     <children>
+                        <JFXButton onMouseClicked="#HomePage" prefHeight="38.0" prefWidth="176.0" style="-fx-background-color: #25c5ab;" styleClass="sidebaritem" text="Home" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="HOME" size="20" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton onAction="#LoginPage" prefHeight="38.0" prefWidth="176.0" styleClass="sidebaritem" text="LOGIN" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="LOCK" size="20" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton onAction="#SinupPage" prefHeight="38.0" prefWidth="176.0" styleClass="sidebaritem" text="SIGN UP" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="USER_PLUS" size="20" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton onAction="#AvisPage" prefHeight="38.0" prefWidth="176.0" styleClass="sidebaritem" text="Contact" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="PHONE" size="20" />
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </left>
+         <center>
+            <Pane fx:id="body" prefHeight="200.0" prefWidth="200.0" style="-fx-background-position: center;" stylesheets="@../Css/accueil.css" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

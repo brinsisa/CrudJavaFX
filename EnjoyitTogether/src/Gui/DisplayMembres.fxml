@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.DisplayMembresController">
+    <stylesheets>
+        <URL value="@displaymembres.css"/>
+    </stylesheets>
+    
+    <children>
+        <Pane layoutY="77.0" prefHeight="5.0" prefWidth="700.0" style="-fx-background-color: #dd9013;" />
+        <Text fill="#eea507" layoutX="22.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Membres">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Text>
+        <TableView fx:id="tablec" layoutX="38.0" layoutY="181.0" prefHeight="280.0" prefWidth="631.0">
+            <columns>
+                <TableColumn fx:id="login" prefWidth="90.0" text="LOGIN" />
+                <TableColumn fx:id="nom" prefWidth="90.0" text="NOM" />
+                <TableColumn fx:id="prenom" prefWidth="90.0" text="PRENOM" />
+                <TableColumn fx:id="email" prefWidth="90.0" text="ADRESSE" />
+                <TableColumn fx:id="profilCol" prefWidth="126.0" text="ACTION" />
+            </columns>
+        </TableView>
+        <HBox layoutX="38.0" layoutY="106.0" prefHeight="57.0" prefWidth="178.0">
+            <children>
+                <FontAwesomeIconView fill="#1ec31e" glyphName="USERS" onMouseClicked="#friendsList" size="40">
+                    <HBox.margin>
+                        <Insets right="30.0" />
+                    </HBox.margin>
+                </FontAwesomeIconView>
+                <FontAwesomeIconView accessibleRole="IMAGE_VIEW" fill="#56b5da" glyphName="REFRESH" onMouseClicked="#displayMembres" size="40" />
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>
